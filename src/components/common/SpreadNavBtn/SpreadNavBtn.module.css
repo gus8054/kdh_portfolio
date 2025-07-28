@@ -1,0 +1,15 @@
+.menu {
+  display: inline-block;
+  border: 1px solid #aaa;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 2px;
+}
+.menu:hover {
+  border-color: var(--color4);
+}
+.menu svg {
+  max-width: 100%;
+  max-height: 100%;
+}

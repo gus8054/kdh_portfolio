@@ -1,0 +1,67 @@
+.section {
+  position: relative;
+  padding-top: 160px;
+  padding-inline: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  /* background-attachment: fixed; */
+}
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../../assets/hero_img.png");
+  background-size: cover;
+  filter: sepia(60%);
+  z-index: 0;
+}
+
+.section > h1 {
+  font-size: 48px;
+  word-break: keep-all;
+  letter-spacing: 4px;
+  font-weight: 900;
+  margin-block: 16px;
+  line-height: 1.2;
+  color: var(--font-color2);
+  text-shadow: 1px 1px 1px var(--font-color), 1px -1px 1px var(--font-color),
+    -1px 1px 1px var(--font-color), -1px -1px 1px var(--font-color);
+  position: relative;
+  z-index: 1;
+}
+
+.section > hr {
+  width: 100px;
+  height: 4px;
+  background-color: var(--color3);
+  border: none;
+  margin-block: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.section > p {
+  position: relative;
+  font-size: 18px;
+  z-index: 1;
+  line-height: 1.5;
+  color: var(--font-color2);
+  text-shadow: 1px 1px 1px var(--font-color), 1px -1px 1px var(--font-color),
+    -1px 1px 1px var(--font-color), -1px -1px 1px var(--font-color);
+}
+
+.section > a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  position: relative;
+  z-index: 1;
+  border-radius: 48px;
+  background-color: var(--color3);
+  margin-block: 32px;
+  color: var(--font-color2);
+  font-size: 18px;
+}
+.section > a:hover {
+  background-color: var(--color4);
+}
