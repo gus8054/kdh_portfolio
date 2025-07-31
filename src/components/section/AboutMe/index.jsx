@@ -1,22 +1,11 @@
 import styles from "./AboutMe.module.css";
-import ClipSVG from "../../../assets/clip.svg?react";
 import NameSVG from "../../../assets/user.svg?react";
 import CalendarSVG from "../../../assets/calendar.svg?react";
 import PhoneSVG from "../../../assets/phone.svg?react";
 import EmailSVG from "../../../assets/email.svg?react";
 import PencilSVG from "../../../assets/pencil.svg?react";
 import PlacePointSVG from "../../../assets/place_point.svg?react";
-
-function Title() {
-  return (
-    <h1 className={styles.title}>
-      <div>
-        <ClipSVG />
-      </div>
-      ABOUT ME
-    </h1>
-  );
-}
+import Title from "../../common/Title";
 
 function DataListItem({ svg: SVGComponent, dt: title, dd: description }) {
   return (
@@ -34,7 +23,7 @@ function DataListItem({ svg: SVGComponent, dt: title, dd: description }) {
 export default function AboutMe() {
   return (
     <section className={styles.section}>
-      <Title />
+      <Title title="ABOUT ME" />
       <dl className={styles.datalist}>
         <DataListItem svg={NameSVG} dt={"이름"} dd={"김동현"} />
         <DataListItem svg={CalendarSVG} dt={"생년월일"} dd={"93.06.17"} />

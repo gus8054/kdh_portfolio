@@ -1,0 +1,51 @@
+.section {
+  padding-inline: 24px;
+  padding-block: 64px;
+  background-color: var(--color3);
+  text-align: center;
+}
+.container {
+  margin-block: 64px;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: #f8f7cc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.group > div {
+  width: 32px;
+  height: 32px;
+}
+.group > div > svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.group > h3 {
+  text-align: left;
+  flex: 1;
+  font-weight: bold;
+}
+.group > ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.group > ul > li {
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: tomato;
+}
