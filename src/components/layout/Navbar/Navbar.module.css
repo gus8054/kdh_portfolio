@@ -4,8 +4,8 @@
   overflow: hidden;
 }
 .nav > ul {
-  padding-top: 24px;
-  padding-inline: 8px;
+  padding-top: 5vw;
+  padding-inline: 1.667vw;
 }
 .nav > ul > li > a {
   display: block;
@@ -13,6 +13,16 @@
   line-height: 2.5;
   font-weight: bold;
   text-decoration: none;
+  font-size: 3.333vw;
+}
+@media screen and (min-width: 700px) {
+  .nav > ul {
+    padding-top: 2.188rem;
+    padding-inline: 0.729rem;
+  }
+  .nav > ul > li > a {
+    font-size: 1.458rem;
+  }
 }
 
 .nav > ul > li > a:hover {

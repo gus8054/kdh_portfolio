@@ -1,29 +1,29 @@
 .section {
-  padding-inline: 24px;
-  padding-block: 64px;
+  padding-inline: 5vw;
+  padding-block: 13.333vw;
   background-color: var(--color1);
   text-align: center;
 }
 
 .card {
-  margin-block: 64px;
-  padding: 32px;
+  margin-block: 13.333vw;
+  padding: 6.667vw;
   background-color: var(--font-color2);
-  border-radius: 16px;
+  border-radius: 3.333vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 32px;
+  row-gap: 6.667vw;
   text-align: left;
 }
 .card:hover {
   scale: 1.05;
 }
 .card > h3 {
-  font-size: 32px;
+  font-size: 6.667vw;
   font-weight: bold;
-  margin-left: 16px;
+  margin-left: 3.333vw;
 }
 
 .card > p,
@@ -34,8 +34,8 @@
   text-decoration: unset;
 }
 .card > div {
-  width: 48px;
-  height: 48px;
+  width: 10vw;
+  height: 10vw;
 }
 .card > div > svg {
   max-width: 100%;

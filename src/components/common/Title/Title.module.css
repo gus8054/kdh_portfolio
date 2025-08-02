@@ -1,16 +1,16 @@
 .title {
   position: relative;
   display: inline-block;
-  font-size: 32px;
+  font-size: 6.667vw;
   font-weight: bold;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--font-color);
+  padding-bottom: 1.667vw;
+  border-bottom: 0.208vw solid var(--font-color);
 }
 .title > div {
   position: absolute;
   right: calc(100% + 16px);
-  width: 32px;
-  height: 32px;
+  width: 6.667vw;
+  height: 6.667vw;
 }
 
 .title > div > svg {

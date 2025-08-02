@@ -1,23 +1,23 @@
 .section {
-  padding-inline: 24px;
-  padding-block: 64px;
+  padding-inline: 5vw;
+  padding-block: 13.333vw;
   background-color: var(--color2);
   text-align: center;
 }
 .card {
-  padding: 16px;
-  margin-top: 64px;
-  border: 1px solid white;
-  border-radius: 4px;
+  padding: 3.333vw;
+  margin-top: 13.333vw;
+  border: 0.208vw solid white;
+  border-radius: 0.833vw;
   background-color: var(--font-color);
   color: var(--font-color2);
   text-align: left;
   line-height: 2;
 }
 .card > p {
-  font-size: 14px;
+  font-size: 3.333vw;
   color: var(--font-color2-sub);
 }
 .card > h4 {
-  font-size: 24px;
+  font-size: 5vw;
 }

@@ -1,30 +1,30 @@
 .section {
-  padding-inline: 24px;
-  padding-block: 64px;
+  padding-inline: 5vw;
+  padding-block: 13.333vw;
   background-color: var(--color3);
   text-align: center;
 }
 .container {
-  margin-block: 64px;
-  padding: 32px;
-  border-radius: 16px;
+  margin-block: 13.333vw;
+  padding: 6.667vw;
+  border-radius: 3.333vw;
   background-color: #f8f7cc;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0vw 2.708vw 5.625vw -1.042vw,
+    rgba(0, 0, 0, 0.3) 0vw 1.667vw 3.333vw -1.667vw;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 6.667vw;
 }
 .group {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 3.333vw;
   align-items: center;
   justify-content: flex-start;
 }
 .group > div {
-  width: 32px;
-  height: 32px;
+  width: 6.667vw;
+  height: 6.667vw;
 }
 .group > div > svg {
   max-width: 100%;
@@ -41,11 +41,11 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  gap: 8px;
+  gap: 1.667vw;
 }
 .group > ul > li {
-  font-size: 14px;
-  padding: 6px 10px;
-  border-radius: 8px;
+  font-size: 3.333vw;
+  padding: 1.25vw 2.083vw;
+  border-radius: 1.667vw;
   background-color: tomato;
 }

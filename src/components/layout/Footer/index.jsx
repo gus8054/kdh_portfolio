@@ -1,3 +1,9 @@
+import styles from "./Footer.module.css";
+
 export default function Footer() {
-  return <p>푸터</p>;
+  return (
+    <footer className={styles.footer}>
+      <p>2025. Kim Dong Hyun. All rights reserved.</p>
+    </footer>
+  );
 }
