@@ -29,6 +29,7 @@
 .card > p,
 .card > a {
   flex-basis: 100%;
+  font-size: 3.333vw;
 }
 .card > a {
   text-decoration: unset;
