@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 5vw;
+  padding: 2.5vw;
   top: 0;
   left: 0;
   background-color: white;
@@ -14,7 +14,7 @@
 }
 @media screen and (min-width: 700px) {
   .header {
-    padding: 2.188rem;
+    padding: 1.094rem;
     box-shadow: 0 0 0.911rem 0.456rem var(--color1);
   }
 }

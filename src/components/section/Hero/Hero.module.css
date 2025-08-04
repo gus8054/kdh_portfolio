@@ -12,6 +12,7 @@
   inset: 0;
   background-image: url("../../../assets/image/hero_img.png");
   background-size: cover;
+  background-position: center;
   /* filter: sepia(60%); */
   z-index: 0;
 }
@@ -68,4 +69,41 @@
 }
 .section > a:hover {
   background-color: var(--color4);
+}
+@media screen and (min-width: 700px) {
+  .section {
+    padding-top: 14.583rem;
+    padding-inline: 2.917rem;
+    padding-bottom: 2.917rem;
+  }
+  .section > h1 {
+    font-size: 4.375rem;
+    letter-spacing: 0.364rem;
+    margin-block: 1.458rem;
+    text-shadow: 0.091rem 0.091rem 0.091rem var(--font-color),
+      0.091rem -0.091rem 0.091rem var(--font-color),
+      -0.091rem 0.091rem 0.091rem var(--font-color),
+      -0.091rem -0.091rem 0.091rem var(--font-color);
+  }
+
+  .section > hr {
+    width: 9.114rem;
+    height: 0.364rem;
+    margin-block: 4.375rem;
+  }
+
+  .section > p {
+    font-size: 1.641rem;
+    text-shadow: 0.091rem 0.091rem 0.091rem var(--font-color),
+      0.091rem -0.091rem 0.091rem var(--font-color),
+      -0.091rem 0.091rem 0.091rem var(--font-color),
+      -0.091rem -0.091rem 0.091rem var(--font-color);
+  }
+
+  .section > a {
+    padding: 1.458rem;
+    border-radius: 4.375rem;
+    margin-block: 2.917rem;
+    font-size: 1.641rem;
+  }
 }

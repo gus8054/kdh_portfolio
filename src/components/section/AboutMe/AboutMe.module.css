@@ -46,3 +46,31 @@
   word-break: break-all;
   line-height: 1.2;
 }
+@media screen and (min-width: 700px) {
+  .section {
+    padding-inline: 2.188rem;
+    padding-block: 5.833rem;
+  }
+
+  .datalist {
+    padding: 5.833rem;
+    gap: 3.646rem;
+  }
+  .datalist > div {
+    gap: 2.917rem;
+  }
+
+  .datalist > div > div:first-child {
+    flex-basis: 2.917rem;
+    height: 2.917rem;
+  }
+
+  .datalist > div > div:last-child > dt {
+    margin-bottom: 1.458rem;
+    font-size: 1.458rem;
+  }
+
+  .datalist > div > div:last-child > dd {
+    font-size: 1.458rem;
+  }
+}

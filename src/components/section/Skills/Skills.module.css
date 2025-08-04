@@ -50,3 +50,35 @@
   border-radius: 1.667vw;
   background-color: tomato;
 }
+@media screen and (min-width: 700px) {
+  .section {
+    padding-inline: 2.188rem;
+    padding-block: 5.833rem;
+  }
+  .container {
+    margin-block: 5.833rem;
+    padding: 2.917rem;
+    border-radius: 1.458rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0rem 1.185rem 2.461rem -0.456rem,
+      rgba(0, 0, 0, 0.3) 0rem 0.729rem 1.458rem -0.729rem;
+    gap: 2.917rem;
+  }
+  .group {
+    gap: 1.458rem;
+  }
+  .group > div {
+    width: 2.917rem;
+    height: 2.917rem;
+  }
+  .group > h3 {
+    font-size: 1.823rem;
+  }
+  .group > ul {
+    gap: 0.729rem;
+  }
+  .group > ul > li {
+    font-size: 1.458rem;
+    padding: 0.547rem 0.911rem;
+    border-radius: 0.729rem;
+  }
+}

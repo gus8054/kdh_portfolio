@@ -216,3 +216,153 @@
     margin: 3.333vw 0;
   }
 }
+@media screen and (min-width: 700px) {
+  .section {
+    padding-inline: 2.188rem;
+    padding-block: 5.833rem;
+  }
+  .card {
+    margin-top: 5.833rem;
+    padding: 1.458rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.273rem 0.547rem,
+      rgba(0, 0, 0, 0.23) 0rem 0.273rem 0.547rem;
+    border-radius: 1.458rem;
+  }
+  .card > h4 {
+    padding: 0.547rem 1.094rem;
+    border-radius: 0.729rem;
+    font-size: 1.458rem;
+  }
+  .card > p:first-of-type {
+    margin-top: 1.458rem;
+    font-size: 1.276rem;
+  }
+  .card > hr {
+    margin-top: 1.458rem;
+  }
+  .card > p:nth-of-type(2) {
+    margin-top: 1.458rem;
+    font-size: 1.458rem;
+  }
+  .card > ul {
+    margin-top: 1.458rem;
+  }
+  .card > ul > li {
+    font-size: 1.094rem;
+  }
+  .card > a {
+    gap: 0.729rem;
+    margin-top: 1.458rem;
+    font-size: 1.094rem;
+  }
+
+  .card > a::before {
+    width: 0.364rem;
+    height: 2.188rem;
+  }
+
+  .card > div {
+    margin-top: 1.458rem;
+    border: 0.182rem solid #e68815;
+    border-radius: 0.729rem;
+    padding: 0.729rem 1.458rem;
+    font-size: 1.094rem;
+  }
+
+  .card > button {
+    margin-top: 1.458rem;
+    padding: 0.729rem 1.458rem;
+    border-radius: 0.729rem;
+    border: 0.182rem solid var(--font-color2-sub);
+    gap: 0.729rem;
+    font-size: 1.094rem;
+  }
+  .card > button > div {
+    width: 1.458rem;
+    height: 1.458rem;
+  }
+
+  .dialog {
+    width: 43.75rem;
+    /* height: 43.75rem; */
+    max-width: calc(100% - 1.458rem);
+    max-height: calc(100% - 1.458rem);
+    border-radius: 1.458rem;
+  }
+  .dialog > header {
+    padding: 2.188rem;
+    font-size: 2.188rem;
+  }
+  .dialog > header > button {
+    font-size: 2.188rem;
+  }
+  .dialog > section {
+    padding: 1.458rem;
+  }
+  .markdown {
+    font-size: 1.458rem;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 2.188rem 0 0.729rem;
+    }
+    h1 {
+      font-size: 2.917rem;
+    }
+    h2 {
+      font-size: 2.552rem;
+    }
+    h3 {
+      font-size: 2.188rem;
+    }
+    h4 {
+      font-size: 1.823rem;
+    }
+    h5 {
+      font-size: 1.458rem;
+    }
+    h6 {
+      font-size: 1.276rem;
+    }
+
+    p {
+      margin: 1.167rem 0;
+    }
+
+    /* 리스트 */
+    ul,
+    ol {
+      padding-left: 2.917rem;
+      margin: 1.458rem;
+    }
+
+    li {
+      margin: 0.583rem 0;
+    }
+
+    /* 인용문 */
+    blockquote {
+      border-left: 0.364rem solid #ddd;
+      padding-left: 1.458rem;
+      margin: 1.458rem 0;
+    }
+
+    /* 테이블 */
+    table {
+      margin: 1.458rem 0;
+    }
+    th,
+    td {
+      border: 0.091rem solid #ccc;
+      padding: 0.875rem;
+    }
+
+    /* 이미지 */
+    img {
+      margin: 1.458rem 0;
+    }
+  }
+}

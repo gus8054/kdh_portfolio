@@ -5,3 +5,9 @@
   background-color: var(--font-color);
   font-size: 2.5vw;
 }
+@media screen and (min-width: 700px) {
+  .footer {
+    padding: 4.375rem 1.458rem;
+    font-size: 1.094rem;
+  }
+}

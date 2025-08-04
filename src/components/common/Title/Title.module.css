@@ -8,7 +8,7 @@
 }
 .title > div {
   position: absolute;
-  right: calc(100% + 16px);
+  right: calc(100% + 3.333vw);
   width: 6.667vw;
   height: 6.667vw;
 }
@@ -20,4 +20,16 @@
 .title.white {
   color: white;
   border-color: white;
+}
+@media screen and (min-width: 700px) {
+  .title {
+    font-size: 2.917rem;
+    padding-bottom: 0.729rem;
+    border-bottom: 0.091rem solid var(--font-color);
+  }
+  .title > div {
+    right: calc(100% + 1.458rem);
+    width: 2.917rem;
+    height: 2.917rem;
+  }
 }

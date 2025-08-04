@@ -1,8 +1,8 @@
 .menu {
   display: inline-block;
-  border: 0.208vw solid #aaa;
-  width: 8.333vw;
-  height: 8.333vw;
+  border: 0.5vw solid #aaa;
+  width: 7.333vw;
+  height: 7.333vw;
   border-radius: 1.25vw;
   padding: 0.417vw;
 }
@@ -15,9 +15,9 @@
 }
 @media screen and (min-width: 700px) {
   .menu {
-    border-width: 0.091rem;
-    width: 3.646rem;
-    height: 3.646rem;
+    border-width: 0.219rem;
+    width: 3.208rem;
+    height: 3.208rem;
     border-radius: 0.547rem;
     padding: 0.182rem;
   }

@@ -48,9 +48,7 @@ const Dialog = forwardRef((_, ref) => {
     <dialog ref={ref} closedby="any" className={styles.dialog}>
       <header>
         README.md
-        <button autofocus onClick={handleClick}>
-          X
-        </button>
+        <button onClick={handleClick}>X</button>
       </header>
       <section className={styles.markdown}>
         {isLoading ? (

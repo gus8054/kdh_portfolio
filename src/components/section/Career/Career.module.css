@@ -10,8 +10,8 @@
 }
 .career_item > div {
   margin-inline: auto;
-  width: 200px;
-  height: 200px;
+  width: 41.667vw;
+  height: 41.667vw;
   border: 0.208vw solid var(--font-color2-sub);
   border-radius: 50%;
   display: flex;
@@ -88,4 +88,57 @@
   margin-top: 3.333vw;
   font-size: 2.5vw;
   color: var(--font-color-sub);
+}
+@media screen and (min-width: 700px) {
+  .section {
+    padding-inline: 2.188rem;
+    padding-block: 5.833rem;
+  }
+  .career_item {
+    margin-top: 5.833rem;
+    font-size: 1.458rem;
+  }
+  .career_item > div {
+    width: 18.229rem;
+    height: 18.229rem;
+    border-width: 0.091rem;
+  }
+  .career_item > h3 {
+    margin-top: 3.646rem;
+    font-size: 2.188rem;
+  }
+  .career_item > p {
+    margin-top: 1.458rem;
+  }
+  .career_item > blockquote {
+    margin-block: 1.458rem;
+    font-size: 1.094rem;
+  }
+  .career_item > ul:first-of-type {
+    gap: 0.729rem;
+    li {
+      font-size: 1.094rem;
+      padding: 0.547rem 0.911rem;
+      border-radius: 0.729rem;
+    }
+  }
+
+  .career_item > ul:last-of-type {
+    margin-block: 2.917rem;
+  }
+  .career_item > ul:last-of-type > hr {
+    margin-block: 1.458rem;
+  }
+
+  .career_item > ul:last-of-type > li > h5 {
+    gap: 1.458rem;
+  }
+  .career_item > ul:last-of-type > li > h5::before {
+    width: 0.364rem;
+    height: 1.823rem;
+  }
+  .career_item > ul:last-of-type > li > p {
+    margin-top: 1.458rem;
+    font-size: 1.094rem;
+  }
 }

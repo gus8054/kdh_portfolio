@@ -43,3 +43,20 @@ body {
     max-width: 960px;
   }
 }
+@media screen and (min-width: 960px) {
+  body {
+    max-width: 960px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dd,
+dt,
+li {
+  cursor: default;
+}
