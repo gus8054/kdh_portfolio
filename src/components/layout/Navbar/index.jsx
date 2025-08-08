@@ -1,8 +1,13 @@
 import styles from "./Navbar.module.css";
-
-export default function Navbar({ isActive, handleClick }) {
+import cn from "classnames";
+export default function Navbar({ isActive, handleClick, scrolled }) {
   return (
-    <nav className={`${styles.nav} ${isActive ? styles.active : ""}`}>
+    <nav
+      className={cn(
+        styles.nav,
+        isActive && styles.active,
+        scrolled && styles.scroll
+      )}>
       <ul>
         <li>
           <a href="#about-me" onClick={handleClick}>

@@ -8,19 +8,21 @@
 .datalist {
   padding: 13.333vw;
   display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 8.333vw;
 }
+
 .datalist > div {
   display: flex;
-  gap: 6.667vw;
+  gap: 4.571vw;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .datalist > div > div:first-child {
-  flex-basis: 6.667vw;
-  height: 6.667vw;
+  flex-basis: 4.571vw;
+  height: 4.571vw;
 }
 
 .datalist > div > div > svg {
@@ -34,14 +36,14 @@
 }
 
 .datalist > div > div:last-child > dt {
-  margin-bottom: 3.333vw;
-  font-size: 3.333vw;
+  margin-bottom: 2.286vw;
+  font-size: 2.286vw;
   font-weight: bold;
   color: var(--font-color);
 }
 
 .datalist > div > div:last-child > dd {
-  font-size: 3.333vw;
+  font-size: 2vw;
   color: var(--font-color-sub);
   word-break: break-all;
   line-height: 1.2;
@@ -57,20 +59,20 @@
     gap: 3.646rem;
   }
   .datalist > div {
-    gap: 2.917rem;
+    gap: 2rem;
   }
 
   .datalist > div > div:first-child {
-    flex-basis: 2.917rem;
-    height: 2.917rem;
+    flex-basis: 2rem;
+    height: 2rem;
   }
 
   .datalist > div > div:last-child > dt {
-    margin-bottom: 1.458rem;
-    font-size: 1.458rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
   .datalist > div > div:last-child > dd {
-    font-size: 1.458rem;
+    font-size: 0.875rem;
   }
 }

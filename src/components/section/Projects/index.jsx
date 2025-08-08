@@ -1,103 +1,61 @@
 import Title from "../../common/Title";
 import styles from "./Projects.module.css";
 import ReadMeSVG from "../../../assets/readme.svg?react";
-import { forwardRef, useEffect, useRef, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import { ShikiHighlighter, isInlineCode } from "react-shiki";
+import React, { useRef, useState } from "react";
+import Dialog from "./Dialog";
+import projects from "./projects";
 
-const CodeHighlight = ({ className, children, node }) => {
-  const code = String(children).trim();
-  const language = className?.match(/language-(\w+)/)?.[1];
-  const isInline = node ? isInlineCode(node) : false;
-
-  return !isInline ? (
-    <ShikiHighlighter language={language} theme="github-dark">
-      {code}
-    </ShikiHighlighter>
-  ) : (
-    <code className={className}>{code}</code>
-  );
-};
-
-const fetchMarkdown = async () => {
-  const res = await fetch("/readme/portfolio.md");
-  if (res.ok) {
-    return res.text();
-  }
-  throw new Error(res.statusText);
-};
-
-const Dialog = forwardRef((_, ref) => {
-  const [data, setData] = useState(null);
-  const [isLoading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-
-  useEffect(() => {
-    setLoading(true);
-    fetchMarkdown()
-      .then((result) => setData(result))
-      .catch((error) => setError(error.message))
-      .finally(() => setLoading(false));
-  }, []);
-
-  const handleClick = () => {
-    ref.current.close();
-  };
-
+export default function Projects() {
   return (
-    <dialog ref={ref} closedby="any" className={styles.dialog}>
-      <header>
-        README.md
-        <button onClick={handleClick}>X</button>
-      </header>
-      <section className={styles.markdown}>
-        {isLoading ? (
-          "Loading..."
-        ) : error ? (
-          `Error : ${error}`
-        ) : (
-          <ReactMarkdown components={{ code: CodeHighlight }}>
-            {data}
-          </ReactMarkdown>
-        )}
-      </section>
-    </dialog>
+    <section className={styles.section}>
+      <Title title="PROJECTS" />
+      {projects.map((project) => (
+        <Card key={project.id} project={project} />
+      ))}
+    </section>
   );
-});
+}
 
-function Card() {
-  const dialogRef = useRef(null);
-  const handleClick = () => {
-    dialogRef.current.showModal();
+function Card({ project }) {
+  const [dialogShow, setDialogShow] = useState(true);
+
+  const handleOpen = () => {
+    setDialogShow(true);
+  };
+  const handleClose = () => {
+    setDialogShow(false);
   };
   return (
     <article className={styles.card}>
-      <h4>포트폴리오 웹사이트</h4>
-      <p>2025.07 (1인 개인 프로젝트)</p>
-      <hr />
-      <p>포트폴리오 웹사이트</p>
-      <ul>
-        <li>나만의 포트폴리오를 위한 웹사이트 개발</li>
-        <li>마크업 파일 랜더링</li>
-        <li>모달</li>
+      <h4 className={styles.title}>{project.title}</h4>
+      <p className={styles.ext}>
+        {project.endedMonth}{" "}
+        {project.joinPeople == 1
+          ? `(1인 개인 프로젝트)`
+          : `${project.joinPeople}인 그룹 프로젝트`}
+      </p>
+      <hr className={styles.hr} />
+      <p className={styles.subtitle}>{project.body}</p>
+      <ul className={styles.ul}>
+        {project.explainList.map((listItem, idx) => (
+          <React.Fragment key={idx}>
+            <li className={styles.ul_list}>{listItem}</li>
+          </React.Fragment>
+        ))}
       </ul>
-      <a href="https://example.com">https://example.com</a>
-      <div>TypeScript, React, CSS Module, AWS, Route 53, S3</div>
-      <button onClick={handleClick}>
+      <a className={styles.github} href={project.github}>
+        깃헙 주소
+      </a>
+      <div className={styles.skillset}>{project.skillSet.join(",")}</div>
+      <button className={styles.openBtn} onClick={handleOpen}>
         <div>
           <ReadMeSVG />
         </div>
         README
       </button>
-      <Dialog ref={dialogRef} />
+      {dialogShow && (
+        <Dialog markdownURL={project.markdownURL} handleClose={handleClose} />
+      )}
     </article>
-  );
-}
-export default function Projects() {
-  return (
-    <section className={styles.section}>
-      <Title title="PROJECTS" />
-      <Card />
-    </section>
   );
 }

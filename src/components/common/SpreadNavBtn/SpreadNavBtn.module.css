@@ -5,9 +5,11 @@
   height: 7.333vw;
   border-radius: 1.25vw;
   padding: 0.417vw;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
 }
 .menu:hover {
-  border-color: var(--color4);
+  rotate: 90deg;
 }
 .menu svg {
   max-width: 100%;
@@ -20,5 +22,10 @@
     height: 3.208rem;
     border-radius: 0.547rem;
     padding: 0.182rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .menu {
+    display: none;
   }
 }

@@ -40,8 +40,10 @@ function GroupContainer() {
 export default function Skills() {
   return (
     <section className={styles.section}>
-      <Title title="Skills" />
-      <GroupContainer />
+      <div className="container">
+        <Title title="Skills" />
+        <GroupContainer />
+      </div>
     </section>
   );
 }

@@ -1,7 +1,12 @@
 import styles from "./Logo.module.css";
-export default function Logo({ handleClick }) {
+import cn from "classnames";
+export default function Logo({ handleClick, scrolled }) {
+  console.log(scrolled);
   return (
-    <a href="#top" className={styles.logo} onClick={handleClick}>
+    <a
+      href="#top"
+      className={cn(styles.logo, scrolled && styles.scroll)}
+      onClick={handleClick}>
       KDH's Portfolio
     </a>
   );

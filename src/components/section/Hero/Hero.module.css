@@ -4,21 +4,13 @@
   padding-inline: 6.667vw;
   padding-bottom: 6.667vw;
   text-align: center;
-  /* background-attachment: fixed; */
-}
-.section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
   background-image: url("../../../assets/image/hero_img.png");
   background-size: cover;
   background-position: center;
-  /* filter: sepia(60%); */
-  z-index: 0;
 }
 
-.section > h1 {
-  font-size: 10vw;
+.title {
+  font-size: 9.143vw;
   word-break: keep-all;
   letter-spacing: 0.833vw;
   font-weight: 900;
@@ -33,7 +25,7 @@
   z-index: 1;
 }
 
-.section > hr {
+.hr {
   width: 20.833vw;
   height: 0.833vw;
   background-color: var(--color3);
@@ -43,9 +35,9 @@
   z-index: 1;
 }
 
-.section > p {
+.body {
   position: relative;
-  font-size: 3.75vw;
+  font-size: 3.429vw;
   z-index: 1;
   line-height: 1.5;
   color: var(--font-color2);
@@ -55,7 +47,7 @@
     -0.208vw -0.208vw 0.208vw var(--font-color);
 }
 
-.section > a {
+.more {
   display: inline-block;
   text-decoration: none;
   padding: 3.333vw;
@@ -65,7 +57,7 @@
   background-color: var(--color3);
   margin-block: 6.667vw;
   color: var(--font-color2);
-  font-size: 3.75vw;
+  font-size: 2.743vw;
 }
 .section > a:hover {
   background-color: var(--color4);
@@ -76,8 +68,8 @@
     padding-inline: 2.917rem;
     padding-bottom: 2.917rem;
   }
-  .section > h1 {
-    font-size: 4.375rem;
+  .title {
+    font-size: 4rem;
     letter-spacing: 0.364rem;
     margin-block: 1.458rem;
     text-shadow: 0.091rem 0.091rem 0.091rem var(--font-color),
@@ -86,24 +78,24 @@
       -0.091rem -0.091rem 0.091rem var(--font-color);
   }
 
-  .section > hr {
+  .hr {
     width: 9.114rem;
     height: 0.364rem;
     margin-block: 4.375rem;
   }
 
-  .section > p {
-    font-size: 1.641rem;
+  .body {
+    font-size: 1.5rem;
     text-shadow: 0.091rem 0.091rem 0.091rem var(--font-color),
       0.091rem -0.091rem 0.091rem var(--font-color),
       -0.091rem 0.091rem 0.091rem var(--font-color),
       -0.091rem -0.091rem 0.091rem var(--font-color);
   }
 
-  .section > a {
+  .more {
     padding: 1.458rem;
     border-radius: 4.375rem;
     margin-block: 2.917rem;
-    font-size: 1.641rem;
+    font-size: 1.2rem;
   }
 }

@@ -1,20 +1,33 @@
 .header {
   position: fixed;
   z-index: 99999;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2.5vw;
+  padding: 2.5vw 5vw;
   top: 0;
   left: 0;
   background-color: white;
   box-shadow: 0 0 2.083vw 1.042vw var(--color1);
 }
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 700px) {
   .header {
-    padding: 1.094rem;
+    padding: 1.094rem 2.188rem;
     box-shadow: 0 0 0.911rem 0.456rem var(--color1);
+  }
+}
+@media screen and (min-width: 960px) {
+  .header {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .scroll {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.911rem 0.456rem var(black);
   }
 }

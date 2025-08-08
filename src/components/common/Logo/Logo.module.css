@@ -3,16 +3,24 @@
   color: var(--font-color);
   font-weight: bold;
   letter-spacing: 0.417vw;
-  font-size: 4vw;
+  font-size: 3.429vw;
   text-decoration: none;
+  line-height: 2;
 }
 .logo:hover {
   color: var(--color4);
 }
-
 @media screen and (min-width: 700px) {
   .logo {
     letter-spacing: 0.182rem;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 960px) {
+  .logo {
+    color: var(--color3);
+  }
+  .logo.scroll:hover {
+    color: var(--color4);
   }
 }

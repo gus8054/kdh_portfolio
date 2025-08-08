@@ -1,7 +1,7 @@
 .title {
   position: relative;
   display: inline-block;
-  font-size: 6.667vw;
+  font-size: 6.857vw;
   font-weight: bold;
   padding-bottom: 1.667vw;
   border-bottom: 0.208vw solid var(--font-color);
@@ -23,7 +23,7 @@
 }
 @media screen and (min-width: 700px) {
   .title {
-    font-size: 2.917rem;
+    font-size: 3rem;
     padding-bottom: 0.729rem;
     border-bottom: 0.091rem solid var(--font-color);
   }
