@@ -5,15 +5,17 @@ import data from "./data";
 function Group({ GroupSVG, title, list = [] }) {
   return (
     <div className={styles.group}>
-      <div>
+      <div className={styles.svg_container}>
         <GroupSVG />
       </div>
-      <h3>{title}</h3>
-      <ul>
+      <h3 className={styles.title}>{title}</h3>
+      <ul className={styles.ul}>
         {list.map((item) => (
           <li
             key={item.name}
-            style={{ color: item.color, backgroundColor: item.bgColor }}>
+            className={styles.ul_item}
+            data-color={item.color}
+            data-background-color={item.bgColor}>
             {item.name}
           </li>
         ))}

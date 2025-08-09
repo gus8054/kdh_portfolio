@@ -4,6 +4,10 @@
   background-color: var(--color5);
   text-align: center;
 }
+.card_container {
+  display: gird;
+  grid-template-columns: 1fr;
+}
 .card {
   margin-top: 13.333vw;
   padding: 3.333vw;
@@ -19,11 +23,11 @@
   color: white;
   width: max-content;
   border-radius: 1.667vw;
-  font-size: 3.333vw;
+  font-size: 2.286vw;
 }
 .ext {
   margin-top: 3.333vw;
-  font-size: 2.917vw;
+  font-size: 2vw;
   color: var(--font-color-sub);
 }
 .hr {
@@ -31,17 +35,17 @@
 }
 .subtitle {
   margin-top: 3.333vw;
-  font-size: 3.333vw;
+  font-size: 2.286vw;
   font-weight: bold;
 }
 .ul {
   margin-top: 3.333vw;
 }
 .ul_item {
-  line-height: 1.5;
+  line-height: 2;
   list-style: disc;
   list-style-position: inside;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 .github {
   display: inline-flex;
@@ -50,13 +54,13 @@
   margin-top: 3.333vw;
   color: cornflowerblue;
   text-decoration: none;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 .github::before {
   display: inline-block;
   content: "";
-  width: 0.833vw;
+  width: 0.5vw;
   height: 5vw;
   background-color: currentColor;
 }
@@ -68,7 +72,7 @@
   border-radius: 1.667vw;
   padding: 1.667vw 3.333vw;
   background-color: #edce7a;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 .openBtn {
@@ -80,7 +84,7 @@
   gap: 1.667vw;
   justify-content: flex-start;
   align-items: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 .openBtn > div {
   width: 3.333vw;
@@ -97,6 +101,7 @@
     padding-block: 5.833rem;
   }
   .card {
+    grid-template-columns: 1fr 1fr;
     margin-top: 5.833rem;
     padding: 1.458rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.273rem 0.547rem,
@@ -106,29 +111,29 @@
   .title {
     padding: 0.547rem 1.094rem;
     border-radius: 0.729rem;
-    font-size: 1.458rem;
+    font-size: 1rem;
   }
   .ext {
     margin-top: 1.458rem;
-    font-size: 1.276rem;
+    font-size: 0.875rem;
   }
   .hr {
     margin-top: 1.458rem;
   }
   .subtitle {
     margin-top: 1.458rem;
-    font-size: 1.458rem;
+    font-size: 1rem;
   }
   .ul {
     margin-top: 1.458rem;
   }
   .ul_item {
-    font-size: 1.094rem;
+    font-size: 0.875rem;
   }
   .github {
     gap: 0.729rem;
     margin-top: 1.458rem;
-    font-size: 1.094rem;
+    font-size: 0.875rem;
   }
 
   .github::before {
@@ -141,7 +146,7 @@
     border: 0.182rem solid #e68815;
     border-radius: 0.729rem;
     padding: 0.729rem 1.458rem;
-    font-size: 1.094rem;
+    font-size: 0.875rem;
   }
 
   .openBtn {
@@ -150,7 +155,7 @@
     border-radius: 0.729rem;
     border: 0.182rem solid var(--font-color2-sub);
     gap: 0.729rem;
-    font-size: 1.094rem;
+    font-size: 0.875rem;
   }
   .openBtn > div {
     width: 1.458rem;

@@ -4,9 +4,14 @@
   background-color: var(--color1);
   text-align: center;
 }
-
-.card {
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
   margin-block: 13.333vw;
+  gap: 4.571vw;
+}
+.card {
+  flex-basis: 100%;
   padding: 6.667vw;
   background-color: var(--font-color2);
   border-radius: 3.333vw;
@@ -14,31 +19,32 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 6.667vw;
+  row-gap: 4.571vw;
   text-align: left;
 }
 .card:hover {
   scale: 1.05;
 }
-.card > h3 {
-  font-size: 6.667vw;
+.title {
+  font-size: 6.857vw;
   font-weight: bold;
   margin-left: 3.333vw;
 }
-
-.card > p,
-.card > a {
+.link {
   flex-basis: 100%;
-  font-size: 3.333vw;
+  font-size: 2.286vw;
 }
-.card > a {
+.desc {
+  font-size: 2vw;
+}
+.link {
   text-decoration: unset;
 }
-.card > div {
-  width: 10vw;
-  height: 10vw;
+.svg_container {
+  width: 9.143vw;
+  height: 9.143vw;
 }
-.card > div > svg {
+.svg_container svg {
   max-width: 100%;
   max-height: 100%;
 }
@@ -47,24 +53,28 @@
     padding-inline: 2.188rem;
     padding-block: 5.833rem;
   }
-
-  .card {
+  .card_container {
     margin-block: 5.833rem;
+    gap: 2rem;
+  }
+  .card {
+    flex: 30rem 1;
     padding: 2.917rem;
     border-radius: 1.458rem;
-    row-gap: 2.917rem;
+    row-gap: 2rem;
   }
-  .card > h3 {
-    font-size: 2.917rem;
+  .title {
+    font-size: 3rem;
     margin-left: 1.458rem;
   }
-
-  .card > p,
-  .card > a {
-    font-size: 1.458rem;
+  .link {
+    font-size: 1rem;
   }
-  .card > div {
-    width: 4.375rem;
-    height: 4.375rem;
+  .desc {
+    font-size: 0.875rem;
+  }
+  .svg_container {
+    width: 4rem;
+    height: 4rem;
   }
 }
