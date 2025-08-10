@@ -43,7 +43,7 @@ export default function Career() {
                   회사 홈페이지를 바닐라 자바스크립트로 개발하여 AWS S3에 배포.
                 </p>
               </li>
-              <hr />
+              <hr className={styles.hr} />
               <li>
                 <h5 className={styles.dev_title}>DB 정규화 및 마이그레이션</h5>
                 <p className={styles.dev_body}>
@@ -52,7 +52,7 @@ export default function Career() {
                   마이그레이션.
                 </p>
               </li>
-              <hr />
+              <hr className={styles.hr} />
               <li>
                 <h5 className={styles.dev_title}>AWS 배포 환경 변경</h5>
                 <p className={styles.dev_body}>
@@ -65,7 +65,7 @@ export default function Career() {
                   예외적으로 접속할 수 있도록 bastion host 운영.
                 </p>
               </li>
-              <hr />
+              <hr className={styles.hr} />
               <li>
                 <h5 className={styles.dev_title}>
                   상위기관 대응(개인 정보 데이터)
@@ -104,7 +104,7 @@ export default function Career() {
                   회사가 속한 협회에서 주관하는 코딩 교육 강사.
                 </p>
               </li>
-              <hr />
+              <hr className={styles.hr} />
               <li>
                 <h5 className={styles.dev_title}>
                   정부 지원 사업 리스트 크롤링

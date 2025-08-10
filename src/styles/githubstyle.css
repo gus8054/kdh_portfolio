@@ -1,4 +1,5 @@
 /* light */
+
 .markdown-body {
   color-scheme: light;
   -ms-text-size-adjust: 100%;
@@ -12,7 +13,9 @@
   line-height: 1.5;
   word-wrap: break-word;
 }
-
+.markdown-body ul {
+  list-style: unset;
+}
 .markdown-body .octicon {
   display: inline-block;
   fill: currentColor;
@@ -749,7 +752,7 @@
   border-radius: 6px;
 } */
 
-/* .markdown-body pre code,
+/* .markdown-body pre code, */
 .markdown-body pre tt {
   display: inline;
   max-width: auto;
@@ -760,7 +763,7 @@
   word-wrap: normal;
   background-color: transparent;
   border: 0;
-} */
+}
 
 .markdown-body .csv-data td,
 .markdown-body .csv-data th {
