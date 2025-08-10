@@ -51,8 +51,8 @@
   font-size: 2vw;
   padding: 1.25vw 2.083vw;
   border-radius: 1.667vw;
-  color: attr(data-color type(<color>));
-  background-color: attr(data-background-color type(<color>));
+  color: var(--color);
+  background-color: var(--bg);
 }
 
 @media screen and (min-width: 700px) {

@@ -14,8 +14,7 @@ function Group({ GroupSVG, title, list = [] }) {
           <li
             key={item.name}
             className={styles.ul_item}
-            data-color={item.color}
-            data-background-color={item.bgColor}>
+            style={{ "--color": item.color, "--bg": item.bgColor }}>
             {item.name}
           </li>
         ))}
