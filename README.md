@@ -1,12 +1,42 @@
-# React + Vite
+# 포트폴리오 웹 사이트(React)
+2025.07 (1인 개인 프로젝트)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌 Summary
 
-Currently, two official plugins are available:
+포트폴리오 웹사이트
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* 나만의 포트폴리오를 위한 웹사이트 개발
+* 포털을 이용해 다이얼로그 구현
+* 마크다운파일 랜더링
 
-## Expanding the ESLint configuration
+> 주요 기능 : 자기소개, 인적 사항, 기술 스택, Github 및 블로그 링크, 프로젝트 경험, 업무 경력
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🤔 Background
+
+이번에 만드는 포트폴리오 사이트가 세 번째 입니다.
+첫 번째는 너무 허접했고 두 번째는 너무 튀었습니다.
+거기다가 두 번째 포트폴리오는 호스팅 기간이 종료됨에 따라 코드도 사라져서 찾을 수가 없게되었습니다.
+당시 깃헙에 코드를 올려놓았었는데 삭제했더군요.
+이직을 결심하며 다시 만들게 되었습니다.
+Notion이나 PDF의 형태로 포트폴리오를 만들 수도 있지만, 프론트 엔드 개발자라면 "나만의 포트폴리오"를 직접 웹사이트 형태로 개발해야 한다고 생각했습니다.
+
+🔍 Meaning
+
+포트폴리오의 목적상 눈에 잘 들어오고 깔끔한 디자인이 중요하다고 생각했습니다.
+그래서 여러 레퍼런스를 참고하며 UI/UX를 직접 구상했는데, 그 과정에서 개발 외적인 UI/UX 디자인 역량도 기를 수 있었습니다.
+여러 업무를 하면서 리액트를 잠깐 놓았었는데 복습차원에서도 도움이 많이 되었습니다.
+
+
+🔨 Technology Stack(s)
+TypeScript, React, CSS Module, AWS S3, AWS Route 53
+
+
+⚙️ Setup & Usage
+
+```
+# Install JavaScript Packages
+npm install
+
+# Run Frontend Server
+npm start
+```
