@@ -59,6 +59,9 @@
   color: var(--font-color2);
   font-size: 2.743vw;
 }
+.more:hover {
+  background-color: var(--color4);
+}
 .section > a:hover {
   background-color: var(--color4);
 }

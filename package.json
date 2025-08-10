@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "classnames": "^2.5.1",
+    "gsap": "^3.13.0",
+    "motion": "^12.23.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-markdown": "^10.1.0",

@@ -6,12 +6,15 @@
 }
 .career_item {
   margin-top: 13.333vw;
-  font-size: 3.333vw;
+  font-size: 2.286vw;
+  display: flex;
+  flex-direction: column;
+  gap: 6.857vw;
 }
-.career_item > div {
+.logo_container {
   margin-inline: auto;
-  width: 41.667vw;
-  height: 41.667vw;
+  width: 34.286vw;
+  height: 34.286vw;
   border: 0.208vw solid var(--font-color2-sub);
   border-radius: 50%;
   display: flex;
@@ -19,74 +22,74 @@
   justify-content: center;
   overflow: hidden;
 }
-.career_item > div > :is(svg, img) {
+.logo_container > :is(svg, img) {
   max-width: 100%;
   max-height: 100%;
 }
 .timart > * {
   fill: #123456;
 }
-
-.career_item > h3 {
-  margin-top: 8.333vw;
-  font-size: 5vw;
+.column {
+  flex: 1;
+}
+.company_name {
+  font-size: 3.429vw;
   font-weight: bold;
   text-align: left;
 }
-.career_item > p {
+.period {
   margin-top: 3.333vw;
   color: var(--font-color-sub);
   text-align: left;
 }
-.career_item > blockquote {
+.main_sentense {
   margin-block: 3.333vw;
   text-align: left;
   line-height: 1.5;
-  font-size: 2.5vw;
 }
-.career_item > ul:first-of-type {
+.ul_tags {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 1.667vw;
-  li {
-    font-size: 2.5vw;
-    padding: 1.25vw 2.083vw;
-    border-radius: 1.667vw;
-    background-color: var(--font-color);
-    color: white;
-  }
 }
-
-.career_item > ul:last-of-type {
+.ul_tags > li {
+  font-size: 2vw;
+  padding: 1.25vw 2.083vw;
+  border-radius: 1.667vw;
+  background-color: var(--font-color);
+  color: white;
+}
+.ul_dev_contents {
   margin-block: 6.667vw;
 }
-.career_item > ul:last-of-type > hr {
+
+.hr {
   margin-block: 3.333vw;
 }
 
-.career_item > ul:last-of-type > li > h5 {
+.dev_title {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 3.333vw;
   font-weight: bold;
 }
-.career_item > ul:last-of-type > li > h5::before {
+.dev_title::before {
   content: "";
   display: inline-block;
   width: 0.833vw;
   height: 4.167vw;
   background-color: var(--font-color);
 }
-.career_item > ul:last-of-type > li > p {
+.dev_body {
   word-break: keep-all;
   line-height: 1.5;
   text-align: left;
   margin-top: 3.333vw;
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: var(--font-color-sub);
 }
 @media screen and (min-width: 700px) {
@@ -96,49 +99,50 @@
   }
   .career_item {
     margin-top: 5.833rem;
-    font-size: 1.458rem;
+    font-size: 1rem;
+    gap: 3rem;
+    flex-direction: row;
   }
-  .career_item > div {
-    width: 18.229rem;
-    height: 18.229rem;
+  .logo_container {
+    flex-shrink: 0;
+    width: 15rem;
+    height: 15rem;
     border-width: 0.091rem;
   }
-  .career_item > h3 {
-    margin-top: 3.646rem;
-    font-size: 2.188rem;
+  .company_name {
+    font-size: 1.5rem;
   }
-  .career_item > p {
-    margin-top: 1.458rem;
+  .period {
+    margin-top: 1rem;
   }
-  .career_item > blockquote {
+  .main_sentense {
     margin-block: 1.458rem;
-    font-size: 1.094rem;
   }
-  .career_item > ul:first-of-type {
+  .ul_tags {
     gap: 0.729rem;
-    li {
-      font-size: 1.094rem;
-      padding: 0.547rem 0.911rem;
-      border-radius: 0.729rem;
-    }
+  }
+  .ul_tags > li {
+    font-size: 0.875rem;
+    padding: 0.547rem 0.911rem;
+    border-radius: 0.729rem;
   }
 
-  .career_item > ul:last-of-type {
+  .ul_dev_contents {
     margin-block: 2.917rem;
   }
-  .career_item > ul:last-of-type > hr {
+  .hr {
     margin-block: 1.458rem;
   }
 
-  .career_item > ul:last-of-type > li > h5 {
+  .dev_title {
     gap: 1.458rem;
   }
-  .career_item > ul:last-of-type > li > h5::before {
+  .dev_title::before {
     width: 0.364rem;
     height: 1.823rem;
   }
-  .career_item > ul:last-of-type > li > p {
+  .dev_body {
     margin-top: 1.458rem;
-    font-size: 1.094rem;
+    font-size: 0.875rem;
   }
 }

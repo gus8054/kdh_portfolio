@@ -4,17 +4,13 @@ import ReadMeSVG from "../../../assets/readme.svg?react";
 import React, { useState } from "react";
 import Dialog from "./Dialog";
 import projects from "./projects";
+import { createPortal } from "react-dom";
 
 export default function Projects() {
   return (
-    <section className={styles.section}>
+    <section id="projects" className={styles.section}>
       <div className="container">
         <Title title="PROJECTS" />
-        <div className={styles.card_container}>
-          {projects.map((project) => (
-            <Card key={project.id} project={project} />
-          ))}
-        </div>
         <div className={styles.card_container}>
           {projects.map((project) => (
             <Card key={project.id} project={project} />
@@ -31,7 +27,7 @@ function Card({ project }) {
   const handleOpen = () => {
     setDialogShow(true);
   };
-  const handleClose = () => {
+  const handleClose = (e) => {
     setDialogShow(false);
   };
 
@@ -63,9 +59,14 @@ function Card({ project }) {
         </div>
         README
       </button>
-      {dialogShow && (
-        <Dialog markdownURL={project.markdownURL} handleClose={handleClose} />
-      )}
+      {dialogShow &&
+        createPortal(
+          <Dialog
+            markdownURL={project.markdownURL}
+            handleClose={handleClose}
+          />,
+          document.body
+        )}
     </article>
   );
 }

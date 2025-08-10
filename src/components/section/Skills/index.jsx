@@ -41,7 +41,7 @@ function GroupContainer() {
 
 export default function Skills() {
   return (
-    <section className={styles.section}>
+    <section id="skills" className={styles.section}>
       <div className="container">
         <Title title="Skills" />
         <GroupContainer />

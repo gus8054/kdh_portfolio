@@ -38,7 +38,6 @@ export default function Header() {
   }, [isActive]);
   return (
     <header
-      id="top"
       className={cn(styles.header, scrolled && styles.scroll)}
       ref={headerRef}>
       <div className={cn("container", styles.headerInner)}>

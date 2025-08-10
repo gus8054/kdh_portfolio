@@ -22,7 +22,7 @@ function Card({ svg, title, link, desc }) {
 }
 export default function Archiving() {
   return (
-    <section className={styles.section}>
+    <section id="archiving" className={styles.section}>
       <div className="container">
         <Title title="ARCHIVING" mode="white" />
         <div className={styles.card_container}>

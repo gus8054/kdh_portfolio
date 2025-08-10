@@ -4,7 +4,7 @@ export default function Logo({ handleClick, scrolled }) {
   console.log(scrolled);
   return (
     <a
-      href="#top"
+      href="#hero"
       className={cn(styles.logo, scrolled && styles.scroll)}
       onClick={handleClick}>
       KDH's Portfolio

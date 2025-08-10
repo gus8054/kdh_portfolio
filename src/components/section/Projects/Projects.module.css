@@ -5,11 +5,11 @@
   text-align: center;
 }
 .card_container {
-  display: gird;
-  grid-template-columns: 1fr;
+  margin-top: 13.333vw;
+  display: grid;
+  gap: 4.571vw;
 }
 .card {
-  margin-top: 13.333vw;
   padding: 3.333vw;
   text-align: left;
   background-color: var(--font-color2);
@@ -85,6 +85,7 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 2vw;
+  cursor: pointer;
 }
 .openBtn > div {
   width: 3.333vw;
@@ -100,9 +101,13 @@
     padding-inline: 2.188rem;
     padding-block: 5.833rem;
   }
+  .card_container {
+    margin-top: 5.833rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
   .card {
     grid-template-columns: 1fr 1fr;
-    margin-top: 5.833rem;
     padding: 1.458rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0rem 0.273rem 0.547rem,
       rgba(0, 0, 0, 0.23) 0rem 0.273rem 0.547rem;

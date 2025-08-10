@@ -22,7 +22,7 @@ function DataListItem({ svg: SVGComponent, dt: title, dd: description }) {
 }
 export default function AboutMe() {
   return (
-    <section className={styles.section}>
+    <section id="about-me" className={styles.section}>
       <div className="container">
         <Title title="ABOUT ME" />
         <dl className={styles.datalist}>

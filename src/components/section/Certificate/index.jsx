@@ -13,7 +13,7 @@ function Card({ title, agency, date }) {
 
 export default function Certificate() {
   return (
-    <section className={styles.section}>
+    <section id="certificate" className={styles.section}>
       <div className="container">
         <Title title="Certificate" mode="white" />
         <div className={styles.card_container}>
