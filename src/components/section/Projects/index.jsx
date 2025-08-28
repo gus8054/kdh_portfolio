@@ -1,12 +1,25 @@
 import Title from "../../common/Title";
 import styles from "./Projects.module.css";
 import ReadMeSVG from "../../../assets/readme.svg?react";
-import React, { useState } from "react";
+import SearchSVG from "../../../assets/search.svg?react";
+import React, { useEffect, useState } from "react";
 import Dialog from "./Dialog";
-import projects from "./projects";
 import { createPortal } from "react-dom";
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    fetch("/projects/projects.json", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => setProjects(data))
+      .catch((err) => console.error(err.message));
+  }, []);
   return (
     <section id="projects" className={styles.section}>
       <div className="container">
@@ -24,13 +37,12 @@ export default function Projects() {
 function Card({ project }) {
   const [dialogShow, setDialogShow] = useState(false);
 
-  const handleOpen = () => {
+  const handleReadmeOpen = () => {
     setDialogShow(true);
   };
-  const handleClose = (e) => {
+  const handleReadmeClose = (e) => {
     setDialogShow(false);
   };
-
   return (
     <article className={styles.card}>
       <h4 className={styles.title}>{project.title}</h4>
@@ -49,21 +61,31 @@ function Card({ project }) {
           </React.Fragment>
         ))}
       </ul>
-      <a className={styles.github} href={project.github}>
+      <a className={styles.github} href={project.github} target="_blank">
         깃헙 주소
       </a>
       <div className={styles.skillset}>{project.skillSet.join(", ")}</div>
-      <button className={styles.openBtn} onClick={handleOpen}>
-        <div>
-          <ReadMeSVG />
-        </div>
-        README
-      </button>
+      <div className={styles.buttons}>
+        <button className={styles.openBtn} onClick={handleReadmeOpen}>
+          <div>
+            <ReadMeSVG />
+          </div>
+          README
+        </button>
+        {project?.build && (
+          <a className={styles.openBtn} href={project.build} target="_blank">
+            <div>
+              <SearchSVG />
+            </div>
+            배포 보러가기
+          </a>
+        )}
+      </div>
       {dialogShow &&
         createPortal(
           <Dialog
             markdownURL={project.markdownURL}
-            handleClose={handleClose}
+            handleClose={handleReadmeClose}
           />,
           document.body
         )}

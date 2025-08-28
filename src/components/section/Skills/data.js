@@ -105,6 +105,11 @@ const data = [
         color: "white",
         bgColor: "#287050",
       },
+      {
+        name: "MySQL",
+        color: "white",
+        bgColor: "#3E6E93",
+      },
     ],
   },
   {

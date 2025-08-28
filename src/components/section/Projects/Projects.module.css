@@ -74,8 +74,16 @@
   background-color: #edce7a;
   font-size: 2vw;
 }
-
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: "1rem";
+}
 .openBtn {
+  text-decoration: none;
+  color: inherit;
   margin-top: 3.333vw;
   padding: 1.667vw 3.333vw;
   border-radius: 1.667vw;

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "portfolioWebsite",
+    "endedMonth": "2025.07",
+    "joinPeople": 1,
+    "title": "포트폴리오 웹사이트 (React)",
+    "body": "이직을 위한 포트폴리오 웹사이트",
+    "explainList": [
+      "나만의 포트폴리오를 위한 웹사이트 개발",
+      "MARKDOWN 파일 랜더링",
+      "포탈을 이용한 다이얼로그",
+      "프로젝트 데이터 추가 / 수정 / 삭제는 S3에서 동적으로 관리"
+    ],
+    "github": "https://github.com/gus8054/kdh_portfolio",
+    "skillSet": [
+      "TypeScript",
+      "React",
+      "CSS Module",
+      "AWS",
+      "Route 53",
+      "S3",
+      "CloudFront",
+      "SSL/TLS"
+    ],
+    "markdownURL": "/projects/portfolio.md"
+  },
+  {
+    "id": "portfolioBooktracker",
+    "endedMonth": "2025.08",
+    "joinPeople": 1,
+    "title": "공책이 필요없는 필기 공간 (React, Express)",
+    "body": "책을 읽고 필기를 해야 공부가 되는 필기러버들을 위한 서비스",
+    "explainList": [
+      "공부할때, 따로 필기노트를 갖고 다니고 싶지 않아서 개발",
+      "마크다운 지원으로 코드 필기도 이쁘게 랜더링",
+      "구글에 등록된 전세계 모든 도서 검색",
+      "JWT 기반 인증 + Github OAuth 2.0 인증(No 라이브러리)",
+      "MUI Core 컴포넌트를 이용하고 디테일한 것은 Emotion으로 디자인",
+      "Zustand로 전역 상태 관리",
+      "React Hook Form으로 유효성 검사",
+      "Sanitize로 XSS 예방",
+      "DB 스키마 설계 (MySQL)"
+    ],
+    "github": "https://github.com/gus8054/kdh_bookcase",
+    "skillSet": [
+      "TypeScript",
+      "React",
+      "React Hook Form",
+      "MUI Core",
+      "Emotion",
+      "Zustand",
+      "JWT",
+      "React Router",
+      "express",
+      "CORS",
+      "AWS",
+      "Route 53",
+      "S3",
+      "CloudFront",
+      "SSL/TLS",
+      "EC2"
+    ],
+    "markdownURL": "/projects/booktracker.md",
+    "build": "https://booktracker.kdh-portfolio.info"
+  }
+]
